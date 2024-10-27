@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Price Calculator</title>
+</head>
+
+<body>
+    <header class="header">Bride/Groom Price Calculator</header>
+
+    <section class="form-container">
+        <form id="formId" action="" method="post">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" placeholder="Enter your name.."><br><br>
+
+            <label for="startingBid">Starting Price:</label>
+            <input type="text" id="startingBid" placeholder="Enter starting price.."><br><br>
+
+            <div class="form-group">
+                <label for="education">Education</label>
+                <select name="education" id="education">
+                    <option value="1.5">Undergraduate degree</option>
+                    <option value="1.2">College degree</option>
+                    <option value="1.05">High School degree</option>
+                    <option value="0.9">Middle School degree</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="networth">Net Worth</label>
+                <select name="networth" id="networth">
+                    <option value="2">More than $10,000</option>
+                    <option value="1.5">$5,000 - $10,000</option>
+                    <option value="1.2">Less than $5,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="caste">Caste</label>
+                <select name="caste" id="caste">
+                    <option value="100">Brahmin</option>
+                    <option value="50">Kshatriya</option>
+                    <option value="20">Vaishya</option>
+                    <option value="10">Shudra</option>
+                    <option value="-50">Untouchable</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Skills</label><br>
+                <input type="checkbox" class="skill" id="musical" value="10">
+                <label for="musical">Playing on a musical instrument</label><br>
+                <input type="checkbox" class="skill" id="cook" value="20">
+                <label for="cook">Good Cook</label><br>
+                <input type="checkbox" class="skill" id="easygoing" value="15">
+                <label for="easygoing">Easygoing Character</label><br>
+                <input type="checkbox" class="skill" id="singing" value="10">
+                <label for="singing">Sings well</label>
+            </div>
+            
+            <div class="form-group">
+                <label>Age:</label><br>
+                <input type="radio" id="age18to23" name="age" value="1.5">
+                <label for="age18to23">Between 18-23</label><br>
+                <input type="radio" id="age24to27" name="age" value="1.2">
+                <label for="age24to27">Between 24-27</label><br>
+                <input type="radio" id="age28plus" name="age" value="0.95">
+                <label for="age28plus">28+</label>
+            </div>
+            
+            <div class="form-group">
+                <label>Reputation:</label><br>
+                <input type="checkbox" class="reputation" id="parentGossip" value="0.85">
+                <label for="parentGossip">Gossips about parent's attitude</label><br>
+                <input type="checkbox" class="reputation" id="characterGossip" value="0.9">
+                <label for="characterGossip">Gossips about character</label><br>
+                <input type="checkbox" class="reputation" id="generalGossip" value="-20">
+                <label for="generalGossip">General gossips</label>
+            </div>
+            <br>
+            <label for="loveLetter">Love Letter:</label>
+            <br>
+            <textarea id="loveLetter" rows="4" cols="50" maxlength="500"></textarea>
+            
+            <button type="submit" id="calculate">Calculate Price</button>   
+            <div id="finalPrice" class="finalPrice"></div>
+
+            <script src="home.js" charset="UTF-8"></script>
+        </form>
+    </section>    
+    
+  
+
+    <footer>
+        <h3>Contact Me</h3>
+        <nav>
+            <ul>
+                <li>Email: <a href="mailto:239304@astanait.edu.kz">239304@astanait.edu.kz</a></li>
+                <li>Phone: +7 705 679 5920</li>
+                <li>Facebook: <a href="https://www.facebook.com/dnslam.bkhyt/">Dnslam Bkhyt</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Dinislam Bakhyt. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
